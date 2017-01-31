@@ -14,6 +14,7 @@
 		867D193A1E400C3D005204C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 867D19381E400C3D005204C2 /* LaunchScreen.storyboard */; };
 		867D19451E400C3D005204C2 /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867D19441E400C3D005204C2 /* LocationTests.swift */; };
 		867D19501E400C3D005204C2 /* LocationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867D194F1E400C3D005204C2 /* LocationUITests.swift */; };
+		867D195F1E401052005204C2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867D195E1E401052005204C2 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		867D194B1E400C3D005204C2 /* LocationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		867D194F1E400C3D005204C2 /* LocationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationUITests.swift; sourceTree = "<group>"; };
 		867D19511E400C3D005204C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		867D195E1E401052005204C2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				867D195F1E401052005204C2 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 				867D19431E400C3D005204C2 /* LocationTests */,
 				867D194E1E400C3D005204C2 /* LocationUITests */,
 				867D192D1E400C3D005204C2 /* Products */,
+				867D195D1E401052005204C2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +127,14 @@
 				867D19511E400C3D005204C2 /* Info.plist */,
 			);
 			path = LocationUITests;
+			sourceTree = "<group>";
+		};
+		867D195D1E401052005204C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				867D195E1E401052005204C2 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,7 +205,13 @@
 				TargetAttributes = {
 					867D192B1E400C3C005204C2 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = DJUVNX8ZSL;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					867D193F1E400C3D005204C2 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -410,6 +428,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DJUVNX8ZSL;
 				INFOPLIST_FILE = Location/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = anderegg.ca.Location;
@@ -422,6 +441,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DJUVNX8ZSL;
 				INFOPLIST_FILE = Location/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = anderegg.ca.Location;
@@ -503,6 +523,7 @@
 				867D19561E400C3D005204C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		867D19571E400C3D005204C2 /* Build configuration list for PBXNativeTarget "LocationTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +532,7 @@
 				867D19591E400C3D005204C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		867D195A1E400C3D005204C2 /* Build configuration list for PBXNativeTarget "LocationUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +541,7 @@
 				867D195C1E400C3D005204C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
